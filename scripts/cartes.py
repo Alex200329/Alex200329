@@ -250,14 +250,16 @@ def carte_contributions(d: dict) -> str:
     aujourd_hui = dt.date.today()
     debut = aujourd_hui - dt.timedelta(days=aujourd_hui.weekday() + 1 + 52 * 7)
     valeurs = [d["jours"].get((debut + dt.timedelta(days=i)).isoformat(), 0) for i in range(53 * 7)]
-    maxi = max(valeurs) or 1
+    # Échelle sur le 90e centile des jours actifs : un jour exceptionnel n'écrase pas tous les autres.
+    actifs = sorted(v for v in valeurs if v > 0)
+    maxi = actifs[int(0.9 * (len(actifs) - 1))] if actifs else 1
     teintes = [BORD, "#22306E", "#2C3FA3", BLEU, "#7C90FF"]
     corps = f'<text x="28" y="40" class="t" font-size="18">{court(sum(valeurs))} contributions in the last year</text>'
     for i, v in enumerate(valeurs):
         jour = debut + dt.timedelta(days=i)
         if jour > aujourd_hui:
             continue
-        niveau = 0 if v == 0 else min(4, 1 + int(3 * (v / maxi) ** 0.5))
+        niveau = 0 if v == 0 else min(4, 1 + int(3 * min(1.0, v / maxi)))
         corps += f'<rect x="{28 + (i // 7) * 17.6:.1f}" y="{58 + (i % 7) * 17}" width="13.5" height="13.5" rx="3" fill="{teintes[niveau]}"/>'
     return svg(998, 210, corps, "Contributions in the last year")
 
