@@ -1,5 +1,8 @@
-# Serpent qui mange la grille des contributions (Platane/snk), généré chaque jour sans service externe et
-# publié sur la branche « sortie ».
+# Visuels des profils générés chaque jour (aucun service externe de cartes), publiés sur la branche « sortie » :
+#   - serpents des contributions d'Alex200329 et de Dossou2003 (Platane/snk) ;
+#   - statistiques exactes de Dossou2003, dépôts privés compris (lowlighter/metrics), si le secret
+#     DOSSOU_METRICS_TOKEN existe (jeton classique du compte Dossou2003, droits read:user et repo).
+# Les actions du compte Dossou2003 étant bloquées, ses visuels sont générés ici.
 name: Profil
 
 on:
@@ -17,22 +20,56 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  serpent:
-    name: Serpent des contributions
+  serpents:
+    name: Serpents des contributions
     runs-on: ubuntu-24.04
     steps:
       - uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: ${{ github.repository_owner }}
+          github_user_name: Alex200329
           outputs: |
             dist/serpent-clair.svg?color_snake=#FF9432&color_dots=#EBEDF0,#FFD8A5,#FFBC6D,#FF9432,#FF740A
             dist/serpent-sombre.svg?palette=github-dark&color_snake=#FF9432&color_dots=#161B22,#4A2A0A,#8A4A10,#FF9432,#FFBC6D
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Dossou2003
+          outputs: |
+            dist/dossou-snake-light.svg?color_snake=#3D5AFE&color_dots=#EBEDF0,#C9D2FF,#9AAAFF,#6E86FF,#3D5AFE
+            dist/dossou-snake-dark.svg?palette=github-dark&color_snake=#7C90FF&color_dots=#161B22,#1E2A66,#2C3FA3,#3D5AFE,#7C90FF
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: sortie
           build_dir: dist
           keep_history: false
-          commit_message: "Serpent des contributions"
+          commit_message: "Serpents des contributions"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  metriques-dossou:
+    name: Statistiques de Dossou2003 (dépôts privés compris)
+    needs: serpents
+    runs-on: ubuntu-24.04
+    env:
+      JETON: ${{ secrets.DOSSOU_METRICS_TOKEN }}
+    steps:
+      - name: Statistiques
+        if: env.JETON != ''
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.DOSSOU_METRICS_TOKEN }}
+          committer_token: ${{ github.token }}
+          user: Dossou2003
+          filename: dossou-metrics.svg
+          committer_branch: sortie
+          committer_message: "Statistiques de Dossou2003"
+          config_timezone: Africa/Porto-Novo
+          base: header, activity, community, repositories
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: B
+          plugin_achievements_limit: 8
+          repositories_affiliations: owner, collaborator, organization_member
