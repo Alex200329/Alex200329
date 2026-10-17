@@ -4,7 +4,7 @@ Usage (dans l'action du profil) :
     GITHUB_TOKEN=<jeton du compte> python scripts/cartes.py Dossou2003 dist/dossou
 
 Produit : <préfixe>-stats.svg, -serie.svg, -langages.svg, -trophees.svg, -contributions.svg.
-Aucune dépendance : bibliothèque standard uniquement. Sans jeton (ou avec --demo), données d'exemple.
+Aucune dépendance : bibliothèque standard uniquement. --demo : données d'exemple (essai local seulement).
 """
 
 from __future__ import annotations
@@ -266,7 +266,12 @@ def main() -> None:
     """Point d'entrée : login, préfixe des fichiers, --demo facultatif."""
     login, prefixe = sys.argv[1], sys.argv[2]
     jeton = os.environ.get("GITHUB_TOKEN", "")
-    d = demo(login) if "--demo" in sys.argv or not jeton else collecter(login, jeton)
+    if "--demo" in sys.argv:
+        d = demo(login)
+    elif jeton:
+        d = collecter(login, jeton)
+    else:
+        sys.exit("Aucun jeton : cartes non générées (jamais de données d'exemple publiées).")
     os.makedirs(os.path.dirname(prefixe) or ".", exist_ok=True)
     for nom, rendu in (("stats", carte_stats), ("serie", carte_serie), ("langages", carte_langages),
                        ("trophees", carte_trophees), ("contributions", carte_contributions)):
