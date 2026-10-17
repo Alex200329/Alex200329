@@ -43,14 +43,21 @@ Application mobile, espace garage web et back-office. Lancement en 2026.
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Alex200329&bg_color=061423&color=DCE6F0&line=FF9432&point=FFFFFF&area=true&area_color=FF9432&hide_border=true&radius=16&custom_title=Activit%C3%A9%20des%2030%20derniers%20jours" alt="Graphique d'activité" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Alex200329/Alex200329/sortie/calendrier.svg" alt="Calendrier 3D des contributions" width="100%"/>
 </div>
 
-## 🏆 Trophées
+## 🏆 Succès
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Alex200329&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&column=7" alt="Trophées GitHub" width="100%"/>
+  <img src="https://raw.githubusercontent.com/Alex200329/Alex200329/sortie/succes.svg" alt="Succès GitHub" width="100%"/>
 </div>
+
+## 🐍 Une année de contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Alex200329/Alex200329/sortie/serpent-sombre.svg"/>
+  <img src="https://raw.githubusercontent.com/Alex200329/Alex200329/sortie/serpent-clair.svg" alt="Serpent qui mange la grille des contributions" width="100%"/>
+</picture>
 
 <div align="center">
 <br/>
