@@ -1,7 +1,5 @@
-# Visuels du profil générés chaque jour (aucun service externe) et publiés sur la branche « sortie » :
-#   - serpent qui mange la grille des contributions (Platane/snk) ;
-#   - calendrier 3D des contributions et succès (lowlighter/metrics).
-# Avec un secret METRICS_TOKEN (jeton classique, droits read:user et repo), les dépôts privés sont comptés.
+# Serpent qui mange la grille des contributions (Platane/snk), généré chaque jour sans service externe et
+# publié sur la branche « sortie ».
 name: Profil
 
 on:
@@ -38,32 +36,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  metriques:
-    name: Calendrier et succès
-    needs: serpent
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Calendrier 3D des contributions
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          filename: calendrier.svg
-          committer_branch: sortie
-          committer_message: "Calendrier des contributions"
-          config_timezone: Africa/Porto-Novo
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-      - name: Succès (trophées)
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN || github.token }}
-          filename: succes.svg
-          committer_branch: sortie
-          committer_message: "Succès"
-          config_timezone: Africa/Porto-Novo
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-          plugin_achievements_limit: 12

@@ -38,18 +38,8 @@ Application mobile, espace garage web et back-office. Lancement en 2026.
 ## 📊 Statistiques GitHub
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Alex200329&show_icons=true&include_all_commits=true&count_private=true&locale=fr&hide_border=true&border_radius=16&bg_color=061423&title_color=FF9432&icon_color=FF9432&text_color=DCE6F0" alt="Statistiques GitHub" height="170"/>
-  <img src="https://streak-stats.demolab.com?user=Alex200329&locale=fr&hide_border=true&border_radius=16&background=061423&ring=FF9432&fire=FF9432&currStreakLabel=FF9432&sideLabels=DCE6F0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8FA6BF&stroke=0D2A47" alt="Série de contributions" height="170"/>
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Alex200329/Alex200329/sortie/calendrier.svg" alt="Calendrier 3D des contributions" width="100%"/>
-</div>
-
-## 🏆 Succès
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Alex200329/Alex200329/sortie/succes.svg" alt="Succès GitHub" width="100%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Alex200329&show_icons=true&include_all_commits=true&count_private=true&locale=fr&hide_border=true&border_radius=16&bg_color=061423&title_color=FF9432&icon_color=FF9432&text_color=DCE6F0" alt="Statistiques GitHub" height="180"/>
+  <img src="https://streak-stats.demolab.com?user=Alex200329&locale=fr&hide_border=true&border_radius=16&background=061423&ring=FF9432&fire=FF9432&currStreakLabel=FF9432&sideLabels=DCE6F0&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=8FA6BF&stroke=0D2A47" alt="Série de contributions" height="180"/>
 </div>
 
 ## 🐍 Une année de contributions
