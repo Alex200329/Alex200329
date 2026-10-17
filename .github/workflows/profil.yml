@@ -1,7 +1,8 @@
 # Visuels des profils générés chaque jour (aucun service externe de cartes), publiés sur la branche « sortie » :
 #   - serpents des contributions d'Alex200329 et de Dossou2003 (Platane/snk) ;
-#   - statistiques exactes de Dossou2003, dépôts privés compris (lowlighter/metrics), si le secret
-#     DOSSOU_METRICS_TOKEN existe (jeton classique du compte Dossou2003, droits read:user et repo).
+#   - cartes de Dossou2003 dessinées par scripts/cartes.py (statistiques, série, langages, trophées,
+#     contributions), dépôts privés compris, avec le secret DOSSOU_METRICS_TOKEN (jeton classique du compte
+#     Dossou2003, droits read:user et repo).
 # Les actions du compte Dossou2003 étant bloquées, ses visuels sont générés ici.
 name: Profil
 
@@ -24,6 +25,14 @@ jobs:
     name: Serpents des contributions
     runs-on: ubuntu-24.04
     steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: Cartes de Dossou2003
+        env:
+          GITHUB_TOKEN: ${{ secrets.DOSSOU_METRICS_TOKEN }}
+        run: python scripts/cartes.py Dossou2003 dist/dossou
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Alex200329
@@ -45,31 +54,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  metriques-dossou:
-    name: Statistiques de Dossou2003 (dépôts privés compris)
-    needs: serpents
-    runs-on: ubuntu-24.04
-    env:
-      JETON: ${{ secrets.DOSSOU_METRICS_TOKEN }}
-    steps:
-      - name: Statistiques
-        if: env.JETON != ''
-        uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.DOSSOU_METRICS_TOKEN }}
-          committer_token: ${{ github.token }}
-          user: Dossou2003
-          filename: dossou-metrics.svg
-          committer_branch: sortie
-          committer_message: "Statistiques de Dossou2003"
-          config_timezone: Africa/Porto-Novo
-          base: header, activity, community, repositories
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: B
-          plugin_achievements_limit: 8
-          repositories_affiliations: owner, collaborator, organization_member
