@@ -221,28 +221,54 @@ def rang(valeur: float, seuil_max: float) -> tuple[str, float]:
     return next(n for n, s in PALIERS if p >= s), p
 
 
+# Métal de chaque rang : clair, moyen, sombre, lueur.
+METAUX = {"SSS": ("#FFF4C2", "#FFC93C", "#B7791F", VIOLET), "SS": ("#FFF0B8", "#F7B731", "#A86A12", "#F7B731"),
+          "S": ("#FFE2A8", "#E9A23B", "#94580F", "#E9A23B"), "A": ("#F4F6FF", "#B8C0DA", "#6B7391", "#B8C0DA"),
+          "B": ("#FFD9B8", "#CD8B57", "#7A4520", "#CD8B57"), "C": ("#C9CEDD", "#8B96B5", "#4A5270", "#8B96B5")}
+
+
+def coupe(r: str, i: int) -> str:
+    """Coupe en métal dégradé avec anses, étoile, socle gravé et halo."""
+    clair, moyen, sombre, lueur = METAUX[r]
+    etoiles = {"SSS": 3, "SS": 2, "S": 1}.get(r, 0)
+    out = f'''<defs><linearGradient id="m{i}" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{sombre}"/>
+<stop offset="0.35" stop-color="{clair}"/><stop offset="0.6" stop-color="{moyen}"/><stop offset="1" stop-color="{sombre}"/></linearGradient>
+<radialGradient id="l{i}" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="{lueur}" stop-opacity="0.45"/>
+<stop offset="1" stop-color="{lueur}" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l{i})"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m{i})" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m{i})"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m{i})"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m{i})"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="{sombre}" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/>'''
+    for k in range(etoiles):
+        cx = 64 + (k - (etoiles - 1) / 2) * 12
+        out += f'<path d="M{cx} 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="{moyen}"/>'
+    return out
+
+
 def carte_trophees(d: dict) -> str:
-    """Rangée de trophées calculés sur les vraies données."""
+    """Rangée de trophées en métal (or, argent, bronze) calculés sur les vraies données."""
     _, meilleure, total, _, _ = series(d["jours"])
     annees = max(1, dt.datetime.now(dt.timezone.utc).year - d["debut"].year)
     trophees = [("Commits", d["totaux"]["commits"], 5000), ("Contributions", total, 5000), ("Repositories", d["repos"], 150),
                 ("Pull requests", d["totaux"]["prs"], 100), ("Streak", meilleure, 30), ("Languages", len(d["langages"]), 20),
                 ("Experience", annees, 5)]
-    couleurs = {"SSS": "#FFD166", "SS": "#FFD166", "S": "#F4B740", "A": VIOLET, "B": BLEU, "C": DISCRET}
     corps = ""
     for i, (nom, val, objectif) in enumerate(trophees):
         x = 18 + i * 140
         r, p = rang(val, objectif)
-        c = couleurs[r]
-        corps += f'<g transform="translate({x} 18)"><g class="a" style="animation-delay:{i * 0.07:.2f}s">'
-        corps += f'<rect width="128" height="124" rx="14" fill="{FOND}" stroke="{BORD}"/>'
-        corps += f'<path d="M44 26 h40 v14 a20 20 0 0 1 -40 0z" fill="{c}"/><rect x="58" y="60" width="12" height="10" fill="{c}"/>'
-        corps += f'<rect x="50" y="70" width="28" height="6" rx="2" fill="{c}"/>'
-        corps += f'<text x="64" y="44" font-size="13" font-weight="800" fill="{FOND}" text-anchor="middle">{r}</text>'
-        corps += f'<text x="64" y="94" class="t" font-size="12" text-anchor="middle">{nom}</text>'
-        corps += f'<text x="64" y="107" class="d" font-size="11" text-anchor="middle">{court(val)}</text>'
-        corps += f'<rect x="22" y="114" width="84" height="3" rx="1.5" fill="{BORD}"/><rect x="22" y="114" width="{84 * p:.1f}" height="3" rx="1.5" fill="url(#g)"/></g></g>'
-    return svg(998, 160, corps, "GitHub trophies")
+        moyen = METAUX[r][1]
+        corps += f'<g transform="translate({x} 16)"><g class="a" style="animation-delay:{i * 0.07:.2f}s">'
+        corps += f'<rect width="128" height="150" rx="14" fill="{FOND}" stroke="{BORD}"/>'
+        corps += f'<rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="{moyen}" fill-opacity="0.8"/>'
+        corps += f'<g transform="translate(0 8)">{coupe(r, i)}</g>'
+        corps += f'<rect x="{64 - 6 - 5 * len(r)}" y="94" width="{12 + 10 * len(r)}" height="18" rx="9" fill="{moyen}" fill-opacity="0.15" stroke="{moyen}" stroke-opacity="0.6"/>'
+        corps += f'<text x="64" y="107" font-size="11" font-weight="800" fill="{moyen}" text-anchor="middle" letter-spacing="1">{r}</text>'
+        corps += f'<text x="64" y="127" class="t" font-size="12" text-anchor="middle">{nom}</text>'
+        corps += f'<text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">{court(val)}</text></g></g>'
+    return svg(998, 182, corps, "GitHub trophies")
 
 
 def carte_contributions(d: dict) -> str:
