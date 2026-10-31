@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="998" height="182" viewBox="0 0 998 182" role="img" aria-label="GitHub trophies">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3D5AFE"/><stop offset="1" stop-color="#9B6BFF"/></linearGradient>
+<radialGradient id="h" cx="0.9" cy="0" r="0.8"><stop offset="0" stop-color="#3D5AFE" stop-opacity="0.22"/><stop offset="1" stop-color="#3D5AFE" stop-opacity="0"/></radialGradient></defs>
+<style>text{font-family:-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif} .t{fill:#E6EDF3;font-weight:700} .d{fill:#8B96B5;font-weight:500}
+.a{animation:f .8s ease-out both} @keyframes f{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}</style>
+<rect x="0.5" y="0.5" width="997" height="181" rx="16" fill="#10141F" stroke="#1F2638"/>
+<rect x="0.5" y="0.5" width="997" height="181" rx="16" fill="url(#h)"/>
+<g transform="translate(18 16)"><g class="a" style="animation-delay:0.00s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#F7B731" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m0" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A86A12"/>
+<stop offset="0.35" stop-color="#FFF0B8"/><stop offset="0.6" stop-color="#F7B731"/><stop offset="1" stop-color="#A86A12"/></linearGradient>
+<radialGradient id="l0" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F7B731" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#F7B731" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l0)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m0)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m0)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m0)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m0)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#A86A12" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/><path d="M58.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#F7B731"/><path d="M70.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#F7B731"/></g><rect x="48" y="94" width="32" height="18" rx="9" fill="#F7B731" fill-opacity="0.15" stroke="#F7B731" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#F7B731" text-anchor="middle" letter-spacing="1">SS</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Commits</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">4 706</text></g></g><g transform="translate(158 16)"><g class="a" style="animation-delay:0.07s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#FFC93C" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B7791F"/>
+<stop offset="0.35" stop-color="#FFF4C2"/><stop offset="0.6" stop-color="#FFC93C"/><stop offset="1" stop-color="#B7791F"/></linearGradient>
+<radialGradient id="l1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#9B6BFF" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#9B6BFF" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l1)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m1)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m1)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m1)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m1)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#B7791F" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/><path d="M52.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/><path d="M64.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/><path d="M76.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/></g><rect x="43" y="94" width="42" height="18" rx="9" fill="#FFC93C" fill-opacity="0.15" stroke="#FFC93C" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#FFC93C" text-anchor="middle" letter-spacing="1">SSS</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Contributions</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">4 917</text></g></g><g transform="translate(298 16)"><g class="a" style="animation-delay:0.14s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#E9A23B" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#94580F"/>
+<stop offset="0.35" stop-color="#FFE2A8"/><stop offset="0.6" stop-color="#E9A23B"/><stop offset="1" stop-color="#94580F"/></linearGradient>
+<radialGradient id="l2" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#E9A23B" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#E9A23B" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l2)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m2)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m2)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m2)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m2)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#94580F" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/><path d="M64.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#E9A23B"/></g><rect x="53" y="94" width="22" height="18" rx="9" fill="#E9A23B" fill-opacity="0.15" stroke="#E9A23B" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#E9A23B" text-anchor="middle" letter-spacing="1">S</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Repositories</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">123</text></g></g><g transform="translate(438 16)"><g class="a" style="animation-delay:0.21s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#FFC93C" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B7791F"/>
+<stop offset="0.35" stop-color="#FFF4C2"/><stop offset="0.6" stop-color="#FFC93C"/><stop offset="1" stop-color="#B7791F"/></linearGradient>
+<radialGradient id="l3" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#9B6BFF" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#9B6BFF" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l3)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m3)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m3)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m3)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m3)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#B7791F" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/><path d="M52.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/><path d="M64.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/><path d="M76.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/></g><rect x="43" y="94" width="42" height="18" rx="9" fill="#FFC93C" fill-opacity="0.15" stroke="#FFC93C" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#FFC93C" text-anchor="middle" letter-spacing="1">SSS</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Pull requests</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">99</text></g></g><g transform="translate(578 16)"><g class="a" style="animation-delay:0.28s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#B8C0DA" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6B7391"/>
+<stop offset="0.35" stop-color="#F4F6FF"/><stop offset="0.6" stop-color="#B8C0DA"/><stop offset="1" stop-color="#6B7391"/></linearGradient>
+<radialGradient id="l4" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#B8C0DA" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#B8C0DA" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l4)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m4)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m4)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m4)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m4)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#6B7391" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/></g><rect x="53" y="94" width="22" height="18" rx="9" fill="#B8C0DA" fill-opacity="0.15" stroke="#B8C0DA" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#B8C0DA" text-anchor="middle" letter-spacing="1">A</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Streak</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">21</text></g></g><g transform="translate(718 16)"><g class="a" style="animation-delay:0.35s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#FFC93C" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#B7791F"/>
+<stop offset="0.35" stop-color="#FFF4C2"/><stop offset="0.6" stop-color="#FFC93C"/><stop offset="1" stop-color="#B7791F"/></linearGradient>
+<radialGradient id="l5" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#9B6BFF" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#9B6BFF" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l5)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m5)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m5)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m5)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m5)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#B7791F" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/><path d="M52.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/><path d="M64.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/><path d="M76.0 6 l1.6 3.3 3.6 .5 -2.6 2.5 .6 3.6 -3.2 -1.7 -3.2 1.7 .6 -3.6 -2.6 -2.5 3.6 -.5z" fill="#FFC93C"/></g><rect x="43" y="94" width="42" height="18" rx="9" fill="#FFC93C" fill-opacity="0.15" stroke="#FFC93C" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#FFC93C" text-anchor="middle" letter-spacing="1">SSS</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Languages</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">30</text></g></g><g transform="translate(858 16)"><g class="a" style="animation-delay:0.42s"><rect width="128" height="150" rx="14" fill="#0B0E17" stroke="#1F2638"/><rect x="0.5" y="0.5" width="127" height="3" rx="1.5" fill="#B8C0DA" fill-opacity="0.8"/><g transform="translate(0 8)"><defs><linearGradient id="m6" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6B7391"/>
+<stop offset="0.35" stop-color="#F4F6FF"/><stop offset="0.6" stop-color="#B8C0DA"/><stop offset="1" stop-color="#6B7391"/></linearGradient>
+<radialGradient id="l6" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#B8C0DA" stop-opacity="0.45"/>
+<stop offset="1" stop-color="#B8C0DA" stop-opacity="0"/></radialGradient></defs>
+<circle cx="64" cy="50" r="40" fill="url(#l6)"/>
+<path d="M45 30 c-14 0 -14 22 3 22 M83 30 c14 0 14 22 -3 22" fill="none" stroke="url(#m6)" stroke-width="4" stroke-linecap="round"/>
+<path d="M43 22 h42 v14 c0 14 -9 24 -21 24 c-12 0 -21 -10 -21 -24z" fill="url(#m6)"/>
+<path d="M49 26 v10 c0 8 4 14 9 17" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M60 60 h8 l2 10 h-12z" fill="url(#m6)"/>
+<rect x="48" y="70" width="32" height="9" rx="2.5" fill="url(#m6)"/><rect x="54" y="72.5" width="20" height="4" rx="1" fill="#6B7391" fill-opacity="0.5"/>
+<path d="M64 31 l2.6 5.3 5.8 .8 -4.2 4.1 1 5.8 -5.2 -2.7 -5.2 2.7 1 -5.8 -4.2 -4.1 5.8 -.8z" fill="#FFFFFF" fill-opacity="0.9"/></g><rect x="53" y="94" width="22" height="18" rx="9" fill="#B8C0DA" fill-opacity="0.15" stroke="#B8C0DA" stroke-opacity="0.6"/><text x="64" y="107" font-size="11" font-weight="800" fill="#B8C0DA" text-anchor="middle" letter-spacing="1">A</text><text x="64" y="127" class="t" font-size="12" text-anchor="middle">Experience</text><text x="64" y="141" class="d" font-size="10.5" text-anchor="middle">3</text></g></g></svg>
